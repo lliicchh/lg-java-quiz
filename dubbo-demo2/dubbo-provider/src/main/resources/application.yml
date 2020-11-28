@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+dubbo:
+  application:
+    name: provider
+  registry:
+    #注册中心地址
+    address: zookeeper://192.168.0.109:2181
+    #超时时间，毫秒
+    timeout:
+  protocol:
+    #协议名称
+    name: dubbo
+    port: 20882
+  scan:
+    #扫描包位置
+    base-packages: com.study.dubboprovider.apiimpl
